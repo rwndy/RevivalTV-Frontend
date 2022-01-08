@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { HeroComponent, SectionFeature, SectionAboutProduct } from '../components'
+import { HeroComponent, SectionFeature, SectionAboutProduct, SectionProducts } from '../components'
 
 
 export default function Home() {
@@ -14,6 +14,7 @@ export default function Home() {
       <HeroComponent />
       <SectionFeature />
       <SectionAboutProduct />
+      <SectionProducts />
     </>
   )
 }
