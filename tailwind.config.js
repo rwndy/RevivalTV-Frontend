@@ -59,6 +59,9 @@ module.exports = {
       },
       backgroundImage: {
         'hero': "url('/assets'/images/hero-image.png)"
+      },
+      gridTemplateColumns: {
+        'cardReview': '71px 150px'
       }
     },
 
