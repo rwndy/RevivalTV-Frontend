@@ -32,11 +32,11 @@ const SectionProducts = () => {
           products_data.map((product, idx) => (
           <div className="mb-[50px]" key={idx + 1}>
             <div className="px-5">
-              <Image 
-                width={330}
-                height={194}
+              <Image
                 src={`/assets/images/${product.img_src}`}
                 alt={`${product.name} image`}
+                width={330}
+                height={194}
               />
             </div>
 
