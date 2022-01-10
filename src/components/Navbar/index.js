@@ -18,8 +18,8 @@ const NavbarComponent = () => {
   const closeToggle = 'hidden'
 
   return (
-    <nav>
-      <div className="container mx-auto px-14 pt-10 flex items-center justify-between">
+    <nav className='bg-black pt-10 pb-10'>
+      <div className="container mx-auto px-14 flex items-center justify-between">
 
         <div>
           <Link href={"/"}>
@@ -36,7 +36,7 @@ const NavbarComponent = () => {
 
         {/* wrapper link */}
         <div>
-          <button className="sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden" onClick={toggle}>
+          <button className=" md:hidden lg:hidden xl:hidden 2xl:hidden" onClick={toggle}>
             <Image 
               src={'/assets/icons/icon-burger.svg'}
               alt='icon burger'
@@ -56,6 +56,13 @@ const NavbarComponent = () => {
                 </li>
               ))
             }
+            <Image 
+              src={'/assets/icons/icon-search.svg'}
+              alt="icon search"
+              width={25}
+              height={25}
+              className="cursor-pointer"
+            />
           </ul>
         </div>
 

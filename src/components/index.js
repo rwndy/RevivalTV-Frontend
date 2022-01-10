@@ -6,6 +6,7 @@ import SectionProducts from "./SectionProducts";
 import SectionReview from "./SectionReview";
 import Footer from "./Footer";
 
+import { DetailProductComponent } from "./DetailProduct";
 
 
 export { 
@@ -15,5 +16,7 @@ export {
   SectionAboutProduct, 
   SectionProducts,
   SectionReview,
-  Footer
+  Footer,
+
+  DetailProductComponent,
  }
