@@ -32,17 +32,18 @@ export const ThumbnailImage = () => {
 
   return (
     <div>
-      <div className="relative w-[346px] h-[263px] mt-17 mb-[17px]">
+      <div className="relative xsm:w-[346px] xsm:h-[263px] xl:w-[400px] xl:h-[200px] xsm:mt-17 xsm:mb-[17px] xl:mb-[37px] ">
         <Image 
           src={!srcImage ? '/assets/images/highlight1.png' : srcImage}
           alt="thumbnail image"
           layout="fill"
           objectFit="cover"
           className="rounded-sm"
+          quality={100}
         />
       </div>
 
-      <div className="flex justify-between mb-[50px]">
+      <div className="flex xsm:justify-between mb-[50px]">
         {
           list_drones.map(drone => (
             <div key={drone.id} className="cursor-pointer" onClick={() => handleImage(drone)}>

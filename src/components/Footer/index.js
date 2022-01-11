@@ -25,18 +25,21 @@ const Footer = () => {
 
   return (
     <footer className="bg-black">
-      <div className="container px-15 pt-[55px]">
-        <div className="grid grid-cols-1">
-          <div className="items-center flex">
-            <Image 
-              src={'/assets/icons/logo.svg'}
-              alt="icon logo"
-              width={68}
-              height={32}
-            />
-            <h4 className="font-semibold text-white text-[26px] leading-[39px] ml-9">autodrone</h4>
-          </div>
-          <div className="pr-19 mt-[11px] mb-15">
+      <div className="container xsm:px-15 xl:px-[150px] xsm:pt-[55px] xl:pt-[100px] xl:mx-auto">
+        <div className="xsm:rid xsm:grid-cols-1 xl:flex xl:justify-between">
+          <div className="xl:flex xl:flex-col">
+            <div className="xsm:items-center xsm:flex xl:flex xl:items-center">
+              <Image 
+                src={'/assets/icons/logo.svg'}
+                alt="icon logo"
+                width={68}
+                height={32}
+              />
+              <h4 className="font-semibold text-white text-[26px] leading-[39px] ml-9">autodrone</h4>
+            </div>
+            <p className="text-white font-light text-[18px] leading-[27px] ">Look up the sky and beautiful world easily.</p>
+            </div>
+          <div className="pr-19 mt-[11px] mb-15 xl:hidden lg:hidden">
             <p className="text-white font-light text-[18px] leading-[27px] ">Look up the sky and beautiful world easily.</p>
           </div>
 

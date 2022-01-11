@@ -26,16 +26,18 @@ const SectionReview = () => {
 
 
   return (
-    <div className="container px-15">
-      <div className="mb-[37px]">
-        <h1 className=" font-semibold text-[36px] leading-[63px]">What Our “Pilots Are Saying</h1>
+    <div className="container xsm:px-15 xl:px-[150px]">
+      <div className="xsm:mb-[37px] xl:mb-[80px] xl:w-[65%]">
+        <h1 className=" font-semibold xsm:text-[36px] xsm:leading-[63px] xl:text-[64px] xl:leading-[104px]">What Our “Pilots Are Saying</h1>
       </div>
 
+    <div className="xl:flex xl:gap-[50px]">
       {
-      data_reviewers.map((review, idx) => (
-        <CardReview key={idx + 1} job={review.job} name={review.name} avatar={review.avatar} reviews={review.review} />
-      ))
+        data_reviewers.map((review, idx) => (
+          <CardReview key={idx + 1} job={review.job} name={review.name} avatar={review.avatar} reviews={review.review} />
+        ))
       }
+    </div>
       
     </div>
   )
